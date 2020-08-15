@@ -11,7 +11,7 @@ pipeline {
         //     else {
         //         echo 'build in windows'
         //     }
-        // }
+        // } #TEMP
         sh label: 'fuckinglabel', script: './gradlew build --no-daemon'
         archiveArtifacts artifacts: 'dist/trainSchedule.zip'
       }
